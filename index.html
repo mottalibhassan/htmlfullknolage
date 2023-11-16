@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mooli&family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+    <style>
+        table{
+            border: 1px solid black;
+            text-align: center;
+            border-collapse: collapse;
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        section{
+            height: auto;
+            width: 50%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.facebook.com" title="My Facebook Id" target="_blank">Facebook</a><br><br>
+    <a href="Image/IMG20220427112445.jpg" title="MY Image" download>Download</a><br><br>
+    <!--Image need some work-->
+    <img src="Image/IMG20220427112445.jpg" alt="MY Picture" width="70%" height="auto"><br><br>
+    <!--add Nasted list -->
+    <ul>
+        <li>Frutis
+            <ol>
+                <li>Apple
+                    <ul>
+                        <li>Green</li>
+                        <li>Red</li>
+                    </ul>
+                </li>
+                <li>Banana</li>
+            </ol>
+        </li>
+        <li>Vagetables</li>
+        <li>Meat</li>
+    </ul>
+    <!--Web page Nevagation Ber Creat by unorderlist-->
+    <ul style="list-style-type: none; display: flex; gap: 15px;">
+        <li><a href="#" title="My Web Page Home Page" target="_blank">Home</a></li>
+        <li><a href="#" title="About Myself" target="_blank">About</a></li>
+        <li><a href="#" title="For Contack" target="_blank">Contack</a></li>
+        <li><a href="#" title="Our Services" target="_blank">Services</a></li>
+    </ul>
+    <!--table making by html-->
+<table>
+    <thead >
+        <tr>
+            <th>Username</th>
+            <th>Password</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Shafin</td>
+            <td>464866</td>
+        </tr>
+        <tr>
+            <td>alamin</td>
+            <td>464866</td>
+        </tr>
+        <tr>
+            <td>kabir</td>
+            <td>464866</td>
+        </tr>
+        <tr>
+            <td>jabin</td>
+            <td>464866</td>
+        </tr>
+        <tr>
+            <td>jabir</td>
+            <td>464866</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <td colspan="2">count:5</td>
+    </tfoot>
+</table>
+<hr>
+<!--Routin Making used by row collam-->
+<table>
+    <th>
+        <th colspan="7">Time</th>
+    </th>
+        <tr>
+            <td rowspan="6">Hours</td>
+            <td>Mon</td>
+            <td>Tue</td>
+            <td>Wed</td>
+            <td>Thr</td>
+            <td>Fri</td>
+            <td>Sat</td>
+        </tr>
+        <tr >
+            <td>math</td>
+            <td>math</td>
+            <td>math</td>
+            <td>math</td>
+            <td>math</td>
+            <td>math</td>
+        </tr>
+        <tr>
+            <td>math</td>
+            <td>math</td>
+            <td>math</td>
+            <td>math</td>
+            <td>math</td>
+            <td>math</td>
+        </tr>
+        <tr>
+            <td colspan="6">Lunch</td>
+        </tr>
+        <tr>
+            <td>math</td>
+            <td>math</td>
+            <td>math</td>
+            <td>math</td>
+            <td>math</td>
+            <td>math</td>
+        </tr>
+        <tr>
+            <td>math</td>
+            <td>math</td>
+            <td>math</td>
+            <td>math</td>
+            <td>math</td>
+            <td>math</td>
+        </tr>
+</table>
+<!--Table finished-->
+<br><br><hr><br><br>
+<!--Form Start-->
+<section>
+    <div>
+        <label for="username" >Name:</label>
+        <input type="text" id="username" name="#">
+    </div>
+    <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="pass" required>
+    </div>
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+        <label for="sub">Subject:</label>
+        <input type="number" max="5" min="1" id="sub" value="1" >
+    </div>
+    <div>
+        <label for="gender">Gender</label>
+        <input type="radio" id="gender" name="gen" >Male
+        <input type="radio" id="gender" name="gen">Female
+    </div>
+    <div>
+        <label for="Hobies">Hobies:</label>
+        <input type="checkbox" name="hobi" value="sport" >Sports
+        <input type="checkbox" name="hobi" value="garden">garden
+        <input type="checkbox" name="hobi" value="gaming">Gaming
+    </div>
+    <div>
+        <label for="country">Country</label>
+        <select name="country" id="country">
+            <option value="usa">USA</option>
+            <option value="ban">Bangladesh</option>
+            <option value="ind">India</option>
+            <option value="nep">Nepal</option>
+        </select>
+        <div>
+            <label for="coun">Country: </label>
+            <input type="text" id="coun" name="country" list="countries">
+            <details id="countries">
+                <option value="usa"></option>
+                <option value="canada">canada</option>
+                <option value="India">India</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Nepal">Nepal</option>
+                <option value="Maldips">Maldips</option>
+            </details>
+            
+        </div>
+    </div>
+</section>
+<section>
+    <div>
+        <label for="range">Range</label>
+        <input type="range" max="100" min="0" value="89" >
+    </div>
+    <div>
+        <label for="birthday">Birthday: </label>
+        <input type="date" id="birthday" name="birthday">
+    </div>
+    <div>
+        <label for="time">Time: </label>
+        <input type="time" id="time">
+    </div>
+    <div>
+        <label for="color">Color: </label>
+        <input type="color" id="color">
+    </div>
+    <div>
+        <label for="web">Web site link:</label>
+        <input type="url" id="web" placeholder="enter website link">
+    </div>
+    <div>
+        <label for="serch">Search</label>
+        <input type="search" id="scrch" name="src" placeholder="search here">
+    </div>
+</section>
+<section>
+    <fieldset>
+        <legend>Presonal Info:</legend>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente quibusdam, ipsum eligendi quisquam in laboriosam incidunt quae, totam autem at ipsam perferendis laudantium suscipit rem corporis repellat ab sed. Repudiandae provident velit maiores pariatur atque dolore sequi rem iste earum? Impedit adipisci rem nam obcaecati laudantium blanditiis enim nemo natus?</p>
+    </fieldset>
+</section>
+</body>
+</html>
